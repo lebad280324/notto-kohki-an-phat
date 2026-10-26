@@ -1,0 +1,9 @@
+.video-block { min-width: 0; width: 100%; }
+.video-preview.video-player { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 20px; background: #101820; cursor: auto; }
+.video-player iframe { position: absolute; inset: 0; display: block; width: 100%; height: 100%; border: 0; }
+.video-inline-fallback { display: inline-block; margin-top: 12px; color: #d5eaff; font-size: 14px; line-height: 1.6; text-underline-offset: 4px; }
+.video-inline-fallback:hover { color: #fff; text-decoration: underline; }
+.video-inline-fallback:focus-visible { outline: 2px solid #fff; outline-offset: 4px; border-radius: 2px; }
+
+/* Decorative playback: pointer and keyboard actions stay outside the player. */
+.video-preview.video-player, .video-player iframe { pointer-events: none; user-select: none; }

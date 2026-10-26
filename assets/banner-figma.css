@@ -1,0 +1,232 @@
+/* Banner from Delvo Figma: background 185:96, product 8:143,
+   wordmark 6:104/dev_logo_white, benefit icons 185:109 + Group/settings.
+   Keep typography and the registration link as accessible HTML. */
+.hero.hero-figma {
+  --banner-blue: #0068c9;
+  --banner-accent: #ff8b21;
+  height: auto;
+  min-height: 0;
+  padding: 0;
+  overflow: clip;
+  background: #f5fbff;
+}
+.hero-figma .hero-inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 1600 / 685;
+  margin: 0 auto;
+  padding: 0;
+  isolation: isolate;
+  container-type: inline-size;
+}
+.hero-figma .hero-scene { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.hero-figma .hero-scene::before {
+  position: absolute;
+  inset: 0;
+  background: url('banner-factory.png') center / 100% 100% no-repeat;
+  content: '';
+}
+.hero-figma .hero-copy {
+  position: absolute;
+  z-index: 2;
+  top: 14.2%;
+  left: 8.625%;
+  width: 52%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+.hero-figma .hero-eyebrow {
+  margin: 0;
+  color: var(--banner-accent);
+  font-size: 1.75cqi;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: .075cqi;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.hero-figma h1 {
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+  margin: 1.25cqi 0 0;
+  color: var(--banner-blue);
+  font-size: inherit;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-wrap: initial;
+}
+.hero-title-intro {
+  display: block;
+  width: fit-content;
+  font-size: 3cqi;
+  line-height: 1.12;
+  text-decoration: underline;
+  text-decoration-color: #00b5fa;
+  text-decoration-thickness: .18cqi;
+  text-underline-offset: .3cqi;
+}
+.hero-title-composition { display: flex; align-items: center; gap: 1.125cqi; margin-top: .35cqi; }
+.hero-title-number {
+  display: block;
+  flex: 0 0 auto;
+  background: linear-gradient(150deg, #064bab 15%, #0076d4 95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 10cqi;
+  font-weight: 800;
+  line-height: .86;
+  letter-spacing: -.035em;
+}
+.hero-title-details { display: grid; gap: .55cqi; font-size: 2.5cqi; line-height: 1.25; }
+.hero-title-details > span { display: block; white-space: nowrap; }
+.hero-figma .hero-description {
+  width: 36.9cqi;
+  max-width: 100%;
+  min-height: 0;
+  margin: 1.25cqi 0 0;
+  color: #101820;
+  font-size: max(14px, 1.25cqi);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0;
+  opacity: 1;
+}
+.hero-figma .hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: 100%;
+  min-height: max(44px, 3.375cqi);
+  margin: 1.375cqi 0 0;
+  padding: 1cqi 1.75cqi;
+  border: 0;
+  border-radius: .5cqi;
+  background: var(--banner-accent);
+  color: #fff;
+  box-shadow: none;
+  font-size: max(12px, 1cqi);
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hero-figma .hero-button:hover { background: #ec7410; box-shadow: 0 7px 20px #e77c2733; }
+.hero-figma .hero-button:focus-visible { outline: 3px solid var(--banner-blue); outline-offset: 5px; }
+.hero-figma .hero-product {
+  position: absolute;
+  z-index: 1;
+  top: 22.3%;
+  left: 46.8125%;
+  right: auto;
+  bottom: auto;
+  width: 46.25%;
+  min-width: 0;
+  max-width: none;
+  height: auto;
+  margin: 0;
+  object-fit: contain;
+  transform: none;
+  filter: none;
+  animation: none;
+}
+.hero-delvo-sign { position: absolute; top: 4.4%; right: 4%; width: 14.625%; text-align: center; color: #fff; }
+.hero-delvo-sign img { display: block; width: 100%; height: auto; }
+.hero-delvo-sign p { margin: 1.125cqi 0 0; font-size: 1.25cqi; font-weight: 400; line-height: 1.2; white-space: nowrap; }
+.hero-figma .benefits {
+  position: absolute;
+  z-index: 3;
+  top: auto;
+  bottom: 3.8%;
+  left: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1.13fr 1fr;
+  align-items: stretch;
+  gap: 0;
+  width: 82.875%;
+  max-width: none;
+  height: 16.8%;
+  min-height: 0;
+  margin: 0;
+  padding: .8cqi 0;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 .5cqi 1.5cqi #102b3d33;
+  transform: translateX(-50%);
+}
+.hero-figma .benefit-item { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 2.75cqi; padding: 0 1cqi; }
+.hero-figma .benefit-item + .benefit-item { padding: 0 1cqi; border-left: 2px solid #087bff; }
+.hero-figma span.benefit-icon { display: grid; place-items: center; flex: 0 0 4.5cqi; width: 4.5cqi; height: 4.5cqi; margin: 0; border: 0; border-radius: 50%; background: #0075c9; box-shadow: none; }
+.hero-figma .benefit-icon::after { content: none; }
+.hero-figma .benefit-icon img { display: block; width: 2.625cqi; height: 2.625cqi; object-fit: contain; }
+.hero-figma .benefit-icon-robot img { width: 2.875cqi; height: 3.03125cqi; }
+.hero-figma .benefit-icon-detection img { width: 2.5625cqi; height: 2.3125cqi; }
+.hero-figma .benefits p, .hero-figma .benefits strong, .hero-figma .benefits p > span, .hero-figma .benefits [data-count] {
+  margin: 0;
+  padding: 0;
+  color: #0877f9;
+  font-size: 1.75cqi;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.hero-figma .benefits strong, .hero-figma .benefits p > span { display: block; }
+.hero-figma .benefits strong > span { display: inline; }
+.hero-figma .benefits p:hover { transform: none; }
+.hero-figma + .applications { padding-top: 60px; background: linear-gradient(180deg, #f5fbff, #fff 80%); }
+@media (max-width: 1100px) and (min-width: 1001px) {
+  .hero-figma .hero-button { margin-top: 12px; }
+  .hero-figma .benefit-item { gap: 2cqi; }
+}
+@media (max-width: 1000px) {
+  .hero.hero-figma { padding-bottom: 28px; }
+  .hero-figma .hero-inner { aspect-ratio: auto; }
+  .hero-figma .hero-copy { position: relative; top: auto; left: auto; width: calc(100% - 48px); max-width: 760px; margin: 0 auto; padding: 34px 0 0; }
+  .hero-figma .hero-eyebrow { font-size: clamp(13px, 3.4vw, 22px); line-height: 1.5; letter-spacing: .6px; white-space: normal; }
+  .hero-figma h1 { margin-top: 18px; }
+  .hero-title-intro { font-size: clamp(27px, 7.7vw, 48px); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .hero-title-composition { gap: 12px; margin-top: 12px; }
+  .hero-title-number { font-size: clamp(84px, 26vw, 160px); }
+  .hero-title-details { min-width: 0; gap: 6px; font-size: clamp(20px, 6vw, 40px); line-height: 1.2; }
+  .hero-title-details > span { white-space: normal; }
+  .hero-figma .hero-description { width: 100%; max-width: 600px; margin-top: 22px; font-size: 17px; line-height: 1.6; }
+  .hero-figma .hero-button { min-height: 54px; margin-top: 24px; padding: 16px 22px; border-radius: 8px; font-size: 15px; }
+  .hero-figma .hero-scene { position: relative; inset: auto; z-index: 0; height: clamp(250px, 52vw, 420px); margin-top: 24px; }
+  .hero-figma .hero-scene::before { background-position: right bottom; background-size: cover; }
+  .hero-figma .hero-product { top: 18%; left: 50%; width: min(80%, 610px); height: auto; transform: translateX(-50%); }
+  .hero-delvo-sign { top: 7%; right: 4%; width: clamp(90px, 16vw, 130px); }
+  .hero-delvo-sign p { margin-top: 10px; font-size: clamp(8px, 1.4vw, 11px); }
+  .hero-figma .benefits { position: relative; top: auto; bottom: auto; left: auto; width: calc(100% - 48px); max-width: 760px; height: auto; margin: -2px auto 0; padding: 20px; border-radius: 22px; transform: none; gap: 18px; grid-template-columns: 1fr; box-shadow: 0 8px 24px #102b3d18; }
+  .hero-figma .benefit-item { flex-direction: row; justify-content: flex-start; gap: 20px; padding: 0; text-align: left; }
+  .hero-figma .benefit-item + .benefit-item { padding: 18px 0 0; border-left: 0; border-top: 1px solid #d9eaf7; }
+  .hero-figma span.benefit-icon { flex-basis: 52px; width: 52px; height: 52px; }
+  .hero-figma .benefit-icon img { width: 30px; height: 30px; }
+  .hero-figma .benefit-icon-robot img { width: 32px; height: 34px; }
+  .hero-figma .benefit-icon-detection img { width: 30px; height: 27px; }
+  .hero-figma .benefits p, .hero-figma .benefits strong, .hero-figma .benefits p > span, .hero-figma .benefits [data-count] { font-size: 21px; line-height: 1.3; }
+  .hero-figma + .applications { padding-top: 40px; }
+}
+@media (max-width: 400px) {
+  .hero-figma .hero-copy, .hero-figma .benefits { width: calc(100% - 40px); }
+  .hero-figma .hero-description { font-size: 16px; }
+  .hero-figma .hero-button { width: 100%; padding-inline: 15px; font-size: 14px; }
+  .hero-figma .hero-scene { height: 250px; margin-top: 20px; }
+  .hero-figma .hero-product { width: 92%; }
+  .hero-figma .benefits { padding: 18px; }
+  .hero-figma .benefits p, .hero-figma .benefits strong, .hero-figma .benefits p > span, .hero-figma .benefits [data-count] { font-size: 19px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-figma *, .hero-figma *::before { animation: none !important; transition: none !important; }
+}

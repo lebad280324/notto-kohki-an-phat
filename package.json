@@ -1,0 +1,10 @@
+{
+  "name": "notto-kohki-an-phat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page Delvo C-Series — Nitto Kohki × An Phát",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check script.js && python3 checks/verify_site.py"
+  }
+}
